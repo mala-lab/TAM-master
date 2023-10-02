@@ -24,13 +24,13 @@ pip install -r requirements.txt
 >📋  TAM is implemented in Pytorch 1.6.0 with python 3.7 and all the experiments are run on an NVIDIA GeForce RTX 3090 24GB GPU.
 
 ## Datasets
-> BlogCatalog and ACM were downloaded from https://github.com/yixinliu233/CoLA 
-> Amazon and Yelpchi were downloaded from  https://github.com/YingtongDou/CARE-GNN
-> Amazon-all and Yelpchi-all were downloaded from  https://github.com/YingtongDou/CARE-GNN
-> Facebook is obtained from  https://github.com/zhiming-xu/conad
-> Reddit is downloaded from https://github.com/pygod-team/data
-> T-finance is downloaded from https://drive.google.com/drive/folders/1PpNwvZx_YRSCDiHaBUmRIS3x1rZR7fMr
-> OGB-Protein is downloaded from https://ogb.stanford.edu/docs/nodeprop/#ogbn-arxiv
+> BlogCatalog and ACM were downloaded from https://github.com/yixinliu233/CoLA <br>
+> Amazon and Yelpchi were downloaded from  https://github.com/YingtongDou/CARE-GNN <br>
+> Amazon-all and Yelpchi-all were downloaded from  https://github.com/YingtongDou/CARE-GNN <br>
+> Facebook is obtained from  https://github.com/zhiming-xu/conad <br>
+> Reddit is downloaded from https://github.com/pygod-team/data  <br>
+> T-finance is downloaded from https://drive.google.com/drive/folders/1PpNwvZx_YRSCDiHaBUmRIS3x1rZR7fMr <br>
+> OGB-Protein is downloaded from https://ogb.stanford.edu/docs/nodeprop/#ogbn-arxiv <br>
 
 
 ## Training
@@ -41,8 +41,7 @@ To train the model(s) in the paper, run this command:
 python train.py
 ```
 
->📋  In TAM, each LAMNet is implemented by a two-layer GCN, and its weight parameters are optimized using Adam optimizer with 500 epochs and a learning rate of 1e-5 by default. 
-T=3 and K=4 are used for all datasets. Datasets with injected anomalies, such as BlogCatalog and ACM, require strong regularization, so $\lambda=1$ is used by default; whereas $\lambda=0$ is used for the four real-world datasets.
+>📋  In TAM, each LAMNet is implemented by a two-layer GCN, and its weight parameters are optimized using Adam optimizer with 500 epochs and a learning rate of 1e-5 by default.  T=3 and K=4 are used for all datasets. Datasets with injected anomalies, such as BlogCatalog and ACM, require strong regularization, so $\lambda=1$ is used by default; whereas $\lambda=0$ is used for the four real-world datasets.
 For the larger datasets like Amazon-all, YelpChi-all and OGB-Protein, they require larger truncation times  due to the large number of edges. So we set K = 8.
 ## Evaluation
 
@@ -82,10 +81,10 @@ If you use this package and find it useful, please cite our paper using the foll
 ```
 
 ## Acknowledgement and Reference
-[1] Liu, Yixin, et al. "Anomaly detection on attributed networks via contrastive self-supervised learning." IEEE transactions on neural networks and learning systems 33.6 (2021): 2378-2392. \\
-[2] Dou, Yingtong, et al. "Enhancing graph neural network-based fraud detectors against camouflaged fraudsters." Proceedings of the 29th ACM International Conference on Information & Knowledge Management. 2020. \\
-[3] Liu, Kay, et al. "Pygod: A python library for graph outlier detection." arXiv preprint arXiv:2204.12095 (2022). \\
-[4] Xu, Zhiming, et al. "Contrastive attributed network anomaly detection with data augmentation." Advances in Knowledge Discovery and Data Mining: 26th Pacific-Asia Conference, PAKDD 2022, Chengdu, China, May 16–19, 2022, Proceedings, Part II. Cham: Springer International Publishing, 2022. \\
-[5] Hu, Weihua, et al. "Open graph benchmark: Datasets for machine learning on graphs." Advances in neural information processing systems 33 (2020): 22118-22133.\\
-[6] Tang, Jianheng, et al. "Rethinking graph neural networks for anomaly detection." International Conference on Machine Learning. PMLR, 2022.\\
-[7] Tang, Jianheng, et al. "GADBench: Revisiting and Benchmarking Supervised Graph Anomaly Detection." arXiv preprint arXiv:2306.12251 (2023).\\
+[1] Liu, Yixin, et al. "Anomaly detection on attributed networks via contrastive self-supervised learning." IEEE transactions on neural networks and learning systems 33.6 (2021): 2378-2392. <br>
+[2] Dou, Yingtong, et al. "Enhancing graph neural network-based fraud detectors against camouflaged fraudsters." Proceedings of the 29th ACM International Conference on Information & Knowledge Management. 2020. <br>
+[3] Liu, Kay, et al. "Pygod: A python library for graph outlier detection." arXiv preprint arXiv:2204.12095 (2022). <br>
+[4] Xu, Zhiming, et al. "Contrastive attributed network anomaly detection with data augmentation." Advances in Knowledge Discovery and Data Mining: 26th Pacific-Asia Conference, PAKDD 2022, Chengdu, China, May 16–19, 2022, Proceedings, Part II. Cham: Springer International Publishing, 2022. <br>
+[5] Hu, Weihua, et al. "Open graph benchmark: Datasets for machine learning on graphs." Advances in neural information processing systems 33 (2020): 22118-22133.<br>
+[6] Tang, Jianheng, et al. "Rethinking graph neural networks for anomaly detection." International Conference on Machine Learning. PMLR, 2022.<br>
+[7] Tang, Jianheng, et al. "GADBench: Revisiting and Benchmarking Supervised Graph Anomaly Detection." arXiv preprint arXiv:2306.12251 (2023). <br>
