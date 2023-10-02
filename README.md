@@ -8,8 +8,6 @@ Homophily Modeling for Graph Anomaly Detection
 The full paper can be found at [NeurIPS Portal](https://nips.cc/virtual/2023/poster/70486) or [arXiv](https://arxiv.org/pdf/2306.00006.pdf).
 
 
-
-[//]: # ( Optional: include a graphic explaining your approach/main result, bibtex entry, link to demos, blog posts and tutorials)
 >📋  We explore the  property one class homophily to introduce a novel unsupervised anomaly scoring measure for GAD -- local node affinity -- that assigns a larger anomaly score to nodes that are less affiliated with their neighbors, with the affinity defined as similarity on node attributes/representations.
 We further propose Truncated Affinity Maximization (TAM) that learns tailored node representations for our anomaly measure by maximizing the local affinity of nodes to their neighbors.
 TAM is instead optimized on truncated graphs where non-homophily edges are removed iteratively to mitigate this bias. Extensive empirical results on six real-world GAD datasets show that TAM substantially outperforms seven competing models
@@ -22,7 +20,7 @@ To install requirements:
 pip install -r requirements.txt
 ```
 
-[//]: # (Describe how to set up the environment, e.g. pip/conda/docker commands, download datasets, etc...)
+
 >📋  TAM is implemented in Pytorch 1.6.0 with python 3.7 and all the experiments are run on an NVIDIA GeForce RTX 3090 24GB GPU.
 
 ## Datasets
@@ -35,7 +33,6 @@ pip install -r requirements.txt
 > OGB-Protein is downloaded from https://ogb.stanford.edu/docs/nodeprop/#ogbn-arxiv
 
 
-Note that considering it's difficult to conduct an evaluation on the isolated nodes in the graph, they were removed before modeling.
 ## Training
 
 To train the model(s) in the paper, run this command:
@@ -54,8 +51,7 @@ To evaluate our model on dataset,  run:
 ```eval
 python train.py 
 ```
->📋  Describe how to evaluate the trained models on benchmarks reported in the paper, give commands that produce the results (section below). \\
-Since the setting is unsupervised, the model can be evaluated on the whole dataset, the training and evaluation run concurrently and iteratively.
+
 ## Results
 Our model achieves the following performance on :
 
@@ -72,7 +68,7 @@ We reveals an important anomaly-discriminative property, the one-class homophily
 
 
 
->📋  Pick a licence and describe how to contribute to your code repository. 
+
 
 If you use this package and find it useful, please cite our paper using the following BibTeX. Thanks! :)
 
@@ -86,10 +82,10 @@ If you use this package and find it useful, please cite our paper using the foll
 ```
 
 ## Acknowledgement and Reference
-[1] Liu, Yixin, et al. "Anomaly detection on attributed networks via contrastive self-supervised learning." IEEE transactions on neural networks and learning systems 33.6 (2021): 2378-2392.
-[2] Dou, Yingtong, et al. "Enhancing graph neural network-based fraud detectors against camouflaged fraudsters." Proceedings of the 29th ACM International Conference on Information & Knowledge Management. 2020.
-[3] Liu, Kay, et al. "Pygod: A python library for graph outlier detection." arXiv preprint arXiv:2204.12095 (2022).
-[4] Xu, Zhiming, et al. "Contrastive attributed network anomaly detection with data augmentation." Advances in Knowledge Discovery and Data Mining: 26th Pacific-Asia Conference, PAKDD 2022, Chengdu, China, May 16–19, 2022, Proceedings, Part II. Cham: Springer International Publishing, 2022.
-[5] Hu, Weihua, et al. "Open graph benchmark: Datasets for machine learning on graphs." Advances in neural information processing systems 33 (2020): 22118-22133.
-[6] Tang, Jianheng, et al. "Rethinking graph neural networks for anomaly detection." International Conference on Machine Learning. PMLR, 2022.
-[7] Tang, Jianheng, et al. "GADBench: Revisiting and Benchmarking Supervised Graph Anomaly Detection." arXiv preprint arXiv:2306.12251 (2023).
+[1] Liu, Yixin, et al. "Anomaly detection on attributed networks via contrastive self-supervised learning." IEEE transactions on neural networks and learning systems 33.6 (2021): 2378-2392. \\
+[2] Dou, Yingtong, et al. "Enhancing graph neural network-based fraud detectors against camouflaged fraudsters." Proceedings of the 29th ACM International Conference on Information & Knowledge Management. 2020. \\
+[3] Liu, Kay, et al. "Pygod: A python library for graph outlier detection." arXiv preprint arXiv:2204.12095 (2022). \\
+[4] Xu, Zhiming, et al. "Contrastive attributed network anomaly detection with data augmentation." Advances in Knowledge Discovery and Data Mining: 26th Pacific-Asia Conference, PAKDD 2022, Chengdu, China, May 16–19, 2022, Proceedings, Part II. Cham: Springer International Publishing, 2022. \\
+[5] Hu, Weihua, et al. "Open graph benchmark: Datasets for machine learning on graphs." Advances in neural information processing systems 33 (2020): 22118-22133.\\
+[6] Tang, Jianheng, et al. "Rethinking graph neural networks for anomaly detection." International Conference on Machine Learning. PMLR, 2022.\\
+[7] Tang, Jianheng, et al. "GADBench: Revisiting and Benchmarking Supervised Graph Anomaly Detection." arXiv preprint arXiv:2306.12251 (2023).\\
