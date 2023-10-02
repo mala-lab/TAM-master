@@ -21,7 +21,7 @@ pip install -r requirements.txt
 ```
 
 
->📋  TAM is implemented in Pytorch 1.6.0 with python 3.7 and all the experiments are run on an NVIDIA GeForce RTX 3090 24GB GPU.
+>📋  TAM is implemented in Pytorch 1.6.0 with python 3.7 and all the experiments are run on an NVIDIA GeForce RTX 3090 24GB GPU.   For the large-scale graph datasets, all the experiments are run on NVIDIA A100 GPU
 
 ## Datasets
 > BlogCatalog and ACM were downloaded from https://github.com/yixinliu233/CoLA <br>
@@ -31,7 +31,7 @@ pip install -r requirements.txt
 > Reddit is downloaded from https://github.com/pygod-team/data  <br>
 > T-finance is downloaded from https://drive.google.com/drive/folders/1PpNwvZx_YRSCDiHaBUmRIS3x1rZR7fMr <br>
 > OGB-Protein is downloaded from https://ogb.stanford.edu/docs/nodeprop/#ogbn-arxiv <br>
-
+For convenience, all the datasets can be obtained from  https://drive.google.com/drive/folders/1qcDBcVdcfAr_q5VOXBYagtnhA_r3Mm3Z?usp=drive_link
 
 ## Training
 
@@ -45,7 +45,7 @@ python train.py
 For the larger datasets like Amazon-all, YelpChi-all and OGB-Protein, they require larger truncation times  due to the large number of edges. So we set K = 8.
 ## Evaluation
 
-To evaluate our model on dataset,  run:
+To evaluate our model on datasets,  run:
 
 ```eval
 python train.py 
@@ -62,8 +62,7 @@ Our model achieves the following performance on :
 
 
 ## Contributing
-We reveals an important anomaly-discriminative property, the one-class homophily, in GAD datasets with either injected or real anomalies. We utilize this property to introduce a novel unsupervised GAD measure, local node affinity, and further introduce a truncated affinity maximization
-(TAM) approach that end-to-end optimizes the proposed anomaly measure on truncated adjacency  matrix with the non-homophily edges eliminated
+We reveal an important anomaly-discriminative property, the one-class homophily, in GAD datasets with either injected or real anomalies. We utilize this property to introduce a novel unsupervised GAD measure, local node affinity, and further introduce a truncated affinity maximization (TAM) approach that end-to-end optimizes the proposed anomaly measure on truncated adjacency  matrix with the non-homophily edges eliminated
 
 
 
