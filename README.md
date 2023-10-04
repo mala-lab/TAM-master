@@ -21,7 +21,7 @@ pip install -r requirements.txt
 ```
 
 
->📋  TAM is implemented in Pytorch 1.6.0 with python 3.7 and all the experiments are run on an NVIDIA GeForce RTX 3090 24GB GPU.   For the large-scale graph datasets, all the experiments are run on NVIDIA A100 GPU
+>📋  TAM is implemented in Pytorch 1.6.0 with python 3.7 and all the experiments are run on an NVIDIA GeForce RTX 3090 24GB GPU.   For the large-scale graph datasets, T-Finace, Amazon-all, and YelpChi-all, all the experiments are run on NVIDIA A100 GPU. The experiments on OGB-Protein are run on the CPU.
 
 ## Datasets
 > BlogCatalog and ACM were downloaded from https://github.com/yixinliu233/CoLA <br>
@@ -54,10 +54,10 @@ python train.py
 ## Results
 Our model achieves the following performance on :
 
-| Metric | BlogCatalog | ACM      | Amazon         | Facebook | Reddit | YelpChi |
-|--------|-------------|----------|----------------|----------|--------|--------|
-| AUROC  | 0.8248      | 0.8878   | 0.7064         | 0.9144   | 0.6023 | 0.5643 |
-| AUPRC  | 0.4182      | 0.5124   | 0.2634   | 0.2233  | 0.0446 | 0.0778 |
+| Metric | BlogCatalog | ACM      | Amazon         | Facebook | Reddit | YelpChi | Amazon-all | YelpChi-all |T-finance | OGB-Protein |
+|--------|-------------|----------|----------------|----------|--------|--------|--------|--------|--------|--------|
+| AUROC  | 0.8248      | 0.8878   | 0.7064         | 0.9144   | 0.6023 | 0.5643 |0.8476 |0.5818	|0.6175|	0.7449|
+| AUPRC  | 0.4182      | 0.5124   | 0.2634   | 0.2233  | 0.0446 | 0.0778 |0.4346|	0.1886|	0.0547	|0.2173|
 >📋  Include a table of results from your paper, and link back to the leaderboard for clarity and context. If your main result is a figure, include that figure and link to the command or notebook to reproduce it. 
 
 
