@@ -202,7 +202,7 @@ with tqdm(total=args.num_epoch) as pbar:
 
         message = 1 - normalize_score(message)
 
-        draw_pdf(1 - message, ano_label, args.dataset)
+        # draw_pdf(1 - message, ano_label, args.dataset)
         score = message
 
         auc = roc_auc_score(ano_label, score)
