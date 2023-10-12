@@ -1,9 +1,7 @@
->📋  A template README.md for code accompanying a Machine Learning paper
+# Truncated Affinity Maximization: One-class Homophily Modeling for Graph Anomaly Detection (NeurIPS'23)
 
-# Our Paper Title
-
-This repository is the official implementation of Truncated Affinity Maximization: One-class
-Homophily Modeling for Graph Anomaly Detection 
+This repository is the official implementation of NeurIPS'23 paper "Truncated Affinity Maximization: One-class
+Homophily Modeling for Graph Anomaly Detection"
 
 The full paper can be found at [NeurIPS Portal](https://nips.cc/virtual/2023/poster/70486) or [arXiv](https://arxiv.org/pdf/2306.00006.pdf).
 
@@ -58,7 +56,6 @@ Our model achieves the following performance on :
 |--------|-------------|----------|----------------|----------|--------|--------|--------|--------|--------|--------|
 | AUROC  | 0.8248      | 0.8878   | 0.7064         | 0.9144   | 0.6023 | 0.5643 |0.8476 |0.5818	|0.6175|	0.7449|
 | AUPRC  | 0.4182      | 0.5124   | 0.2634   | 0.2233  | 0.0446 | 0.0778 |0.4346|	0.1886|	0.0547	|0.2173|
->📋  Include a table of results from your paper, and link back to the leaderboard for clarity and context. If your main result is a figure, include that figure and link to the command or notebook to reproduce it. 
 
 
 ## Contributing
@@ -70,10 +67,10 @@ We reveal an important anomaly-discriminative property, the one-class homophily,
 
 If you use this package and find it useful, please cite our paper using the following BibTeX. Thanks! :)
 
-```
-@article{hezhe2023truncated,
+```bibtex
+@article{qiao2023truncated,
   title={Truncated Affinity Maximization: One-class Homophily Modeling for Graph Anomaly Detection},
-  author={Hezhe, Qiao and Guansong, Pang},
+  author={Qiao, Hezhe and Pang, Guansong},
   journal={arXiv preprint arXiv:2306.00006},
   year={2023}
 }
