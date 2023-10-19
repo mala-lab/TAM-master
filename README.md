@@ -58,29 +58,22 @@ Our model achieves the following performance on :
 | AUPRC  | 0.4182      | 0.5124   | 0.2634   | 0.2233  | 0.0446 | 0.0778 |0.4346|	0.1886|	0.0547	|0.2173|
 
 
-## Contributing
+## Main Contributions
 We reveal an important anomaly-discriminative property, the one-class homophily, in GAD datasets with either injected or real anomalies. We utilize this property to introduce a novel unsupervised GAD measure, local node affinity, and further introduce a truncated affinity maximization (TAM) approach that end-to-end optimizes the proposed anomaly measure on truncated adjacency  matrix with the non-homophily edges eliminated
 
 
 
 
+## Citation
 
 If you use this package and find it useful, please cite our paper using the following BibTeX. Thanks! :)
 
 ```bibtex
-@article{qiao2023truncated,
+@inproceedings{qiao2023truncated,
   title={Truncated Affinity Maximization: One-class Homophily Modeling for Graph Anomaly Detection},
   author={Qiao, Hezhe and Pang, Guansong},
-  journal={arXiv preprint arXiv:2306.00006},
+  booktitle={Advances in Neural Information Processing Systems},
   year={2023}
 }
 ```
 
-## Acknowledgement and Reference
-[1] Liu, Yixin, et al. "Anomaly detection on attributed networks via contrastive self-supervised learning." IEEE transactions on neural networks and learning systems 33.6 (2021): 2378-2392. <br>
-[2] Dou, Yingtong, et al. "Enhancing graph neural network-based fraud detectors against camouflaged fraudsters." Proceedings of the 29th ACM International Conference on Information & Knowledge Management. 2020. <br>
-[3] Liu, Kay, et al. "Pygod: A python library for graph outlier detection." arXiv preprint arXiv:2204.12095 (2022). <br>
-[4] Xu, Zhiming, et al. "Contrastive attributed network anomaly detection with data augmentation." Advances in Knowledge Discovery and Data Mining: 26th Pacific-Asia Conference, PAKDD 2022, Chengdu, China, May 16–19, 2022, Proceedings, Part II. Cham: Springer International Publishing, 2022. <br>
-[5] Hu, Weihua, et al. "Open graph benchmark: Datasets for machine learning on graphs." Advances in neural information processing systems 33 (2020): 22118-22133.<br>
-[6] Tang, Jianheng, et al. "Rethinking graph neural networks for anomaly detection." International Conference on Machine Learning. PMLR, 2022.<br>
-[7] Tang, Jianheng, et al. "GADBench: Revisiting and Benchmarking Supervised Graph Anomaly Detection." arXiv preprint arXiv:2306.12251 (2023). <br>
