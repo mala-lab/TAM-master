@@ -10,6 +10,7 @@ The full paper can be found at [NeurIPS Portal](https://nips.cc/virtual/2023/pos
 We further propose Truncated Affinity Maximization (TAM) that learns tailored node representations for our anomaly measure by maximizing the local affinity of nodes to their neighbors.
 TAM is instead optimized on truncated graphs where non-homophily edges are removed iteratively to mitigate this bias. Extensive empirical results on six real-world GAD datasets show that TAM substantially outperforms seven competing models
 >
+![Framework](framework.PNG)
 ## Requirements
 
 To install requirements:
