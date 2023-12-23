@@ -42,7 +42,7 @@ python train.py
 ```
 
 >📋  In TAM, each LAMNet is implemented by a two-layer GCN, and its weight parameters are optimized using Adam optimizer with 500 epochs and a learning rate of 1e-5 by default.  T=3 and K=4 are used for all datasets. Datasets with injected anomalies, such as BlogCatalog and ACM, require strong regularization, so $\lambda=1$ is used by default; whereas $\lambda=0$ is used for the four real-world datasets.
-For the larger datasets like Amazon-all, YelpChi-all and OGB-Protein, they require larger truncation times  due to the large number of edges. So we set K = 8.
+For the larger datasets like Amazon-all, YelpChi-all and OGB-Protein, they require larger truncation times  due to the large number of edges. So we set K = 7.
 ## Evaluation
 
 To evaluate our model on datasets,  run:
