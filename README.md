@@ -21,7 +21,7 @@ pip install -r requirements.txt
 ```
 
 
->📋  TAM is implemented in Pytorch 1.6.0 with python 3.7 and all the experiments are run on an NVIDIA GeForce RTX 3090 24GB GPU.   For the large-scale graph datasets, T-Finace, Amazon-all, and YelpChi-all, all the experiments are run on NVIDIA A100 GPU. The experiments on OGB-Protein are run on the CPU.
+>📋  TAM is implemented in Pytorch 1.6.0 with Python 3.7 and all the experiments are run on an NVIDIA GeForce RTX 3090 24GB GPU.  For large-scale graph datasets, like T-Finance and YelpChi-all, the experiments are run on NVIDIA A100 GPU for quickness. The experiments on OGB-Protein are run on the CPU.
 
 ## Datasets
 > BlogCatalog and ACM were downloaded from https://github.com/yixinliu233/CoLA <br>
@@ -42,7 +42,7 @@ python train.py
 ```
 
 >📋  In TAM, each LAMNet is implemented by a two-layer GCN, and its weight parameters are optimized using Adam optimizer with 500 epochs and a learning rate of 1e-5 by default.  T=3 and K=4 are used for all datasets. Datasets with injected anomalies, such as BlogCatalog and ACM, require strong regularization, so $\lambda=1$ is used by default; whereas $\lambda=0$ is used for the four real-world datasets.
-For the larger datasets like Amazon-all, YelpChi-all and OGB-Protein, they require larger truncation times  due to the large number of edges. So we set K = 7.
+For the larger datasets like Amazon-all, YelpChi-all, and OGB-Protein, they require larger truncation times  due to the large number of edges. So we set K = 7.
 ## Evaluation
 
 To evaluate our model on datasets,  run:
