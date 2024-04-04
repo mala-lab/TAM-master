@@ -51,6 +51,18 @@ To evaluate our model on datasets,  run:
 python train.py 
 ```
 
+## Dataset
+| Dataset | Nodes | Edges      | Attributes         | Anomalies(Rate) |
+|--------|-------------|----------|----------------|----------|
+| BlogCatalog  | 5,196 | 171,743  | 8,189 |300(5.77%)   |  
+| ACM  |16,484| 71,980| 8,337| 597(3.63%)|
+| Amazon(UPU)  |10244| 175,608 |25| 693(6.66%)|
+| Facebook  |10,984| 168,016| 64 | 366(3.33%)|
+| YelpChi (RUR)  |24,741| 49,315| 32| 1,217(4.91%)|
+| Amazon-all  |11,944 |4,398,392| 25| 821(6.87%)|
+| YelpChi-all |45,941 | 3,846,979 |32 |6,674(14.52%)|
+| T-Finance |39,357| 21,222,543| 10|1,803 (4.58%)|
+| OGB-Protein |39,357| 132,534 | 39,561,252| 8| 6000(4.5%)|
 ## Results
 Our model achieves the following performance on :
 
