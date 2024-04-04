@@ -62,7 +62,7 @@ python train.py
 | Amazon-all  |11,944 |4,398,392| 25| 821(6.87%)|
 | YelpChi-all |45,941 | 3,846,979 |32 |6,674(14.52%)|
 | T-Finance |39,357| 21,222,543| 10|1,803 (4.58%)|
-| OGB-Protein |39,357| 132,534 | 39,561,252| 8| 6000(4.5%)|
+| OGB-Protein |132,534  | 39,561,252| 8| 6000(4.5%)|
 ## Results
 Our model achieves the following performance on :
 
